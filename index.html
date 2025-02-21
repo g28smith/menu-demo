@@ -1,45 +1,90 @@
 <!doctype html>
-<html>
-<head>
-<style>
-#main {
-width: 1200px;
- }
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <!-- This is the google font embed code for Goudy Bookletter 1911 which I am using for body text, you can find it at https://fonts.google.com/specimen/Goudy+Bookletter+1911?categoryFilters=Serif:%2FSerif%2FOld+Style+Garalde next week we'll learn how to embed google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
 
-  #content {
-    width: 100%;
-  }
-  
-  .left {
-  width: 66%;
-  float: left;
-  display: inline;
-  clear: none;
-  }
-  
-  .right {
-  width: 33%; 
-  float: right;
-  display: inline;
-  clear: right;
-  }
-  
-</style>
-  
-</head>
-<body>
-<div id="main">
-<div id="nav">
-  
-</div>
-<div id="content">
-<div class="left">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at massa dui. Nullam nec sodales nulla. Maecenas porttitor bibendum diam, a posuere orci fringilla ac. Donec interdum lorem ac leo aliquet porttitor. Quisque feugiat erat malesuada eros eleifend, eu porta lorem scelerisque. Quisque finibus urna ac pulvinar hendrerit. Proin euismod, purus eget finibus suscipit, orci ex placerat elit, eget volutpat ante risus nec erat. Etiam auctor enim a malesuada posuere. Cras est magna, euismod sit amet dolor ullamcorper, rhoncus tincidunt sem. Fusce lacinia dolor eget enim rutrum condimentum.<p>
-<p>In eleifend sem quis condimentum hendrerit. Praesent vulputate rutrum aliquet. Pellentesque sodales, urna vel maximus ultricies, lorem ante consequat ex, ac cursus urna mauris sit amet ex. Nulla vulputate luctus porta. Aenean sed odio lacinia, accumsan lorem a, efficitur libero. Morbi consectetur massa a libero molestie, a dignissim dui fringilla. Sed sed tempor magna. Etiam pretium magna a ante sollicitudin tincidunt. Sed vulputate ex quis euismod ultrices. Nulla turpis augue, vehicula nec iaculis in, imperdiet convallis ligula.</p>
-</div>  
-<div class="right">
-<iframe src="https://giphy.com/embed/PK2RJGLlPUC3u" width="290" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>  
-</div>
-</div>
+    <!-- This is the google font embed code for DM Sans which I am using for header and menu text, you can find it at https://fonts.google.com/specimen/DM+Sans?categoryFilters=Sans+Serif:%2FSans%2FGeometric
+
+you can find it at https://fonts.google.com/specimen/Goudy+Bookletter+1911?categoryFilters=Serif:%2FSerif%2FOld+Style+Garalde next week we'll learn how to embed google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: "Goudy Bookletter 1911", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 24px;
+      }
+      
+      h1 , h2 {
+        font-family: "DM Sans", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      
+      h1 {
+        font-size: 2em; 
+      }
+      
+      h2 {
+        font-size: 1.5em;
+      }
+
+      #main {
+        width: 1200px;
+      }
+
+      #content {
+        width: 100%;
+      }
+
+      .left {
+        width: 66%;
+        float: left;
+        display: inline;
+        clear: none;
+      }
+
+      .right {
+        width: 33%;
+        float: right;
+        display: inline;
+        clear: right;
+      }
+
+      .left p {
+        font-size: 1.25em;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="main">
+      <h1>Basic Nav Demo</h1>
+      <div id="nav">
+        <ul>
+        <li><a href="/">Link 1</a></li>
+        <li><a href="/">Link 2</a></li>
+        <li><a href="/">Link 3</a></li>
+        <li><a href="/">Link 4</a></li>
+        </ul>
+            
+      </div>
+      <div id="content">
+        <div class="left">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at massa dui. Nullam nec sodales nulla. Maecenas porttitor bibendum diam, a posuere orci fringilla ac. Donec interdum lorem ac leo aliquet porttitor. Quisque feugiat erat malesuada eros eleifend, eu porta lorem scelerisque. Quisque finibus urna ac pulvinar hendrerit. Proin euismod, purus eget finibus suscipit, orci ex placerat elit, eget volutpat ante risus nec erat. Etiam auctor enim a malesuada posuere. Cras est magna, euismod sit amet dolor ullamcorper, rhoncus tincidunt sem. Fusce lacinia dolor eget enim rutrum condimentum.
+          <p>
+          <p>In eleifend sem quis condimentum hendrerit. Praesent vulputate rutrum aliquet. Pellentesque sodales, urna vel maximus ultricies, lorem ante consequat ex, ac cursus urna mauris sit amet ex. Nulla vulputate luctus porta. Aenean sed odio lacinia, accumsan lorem a, efficitur libero. Morbi consectetur massa a libero molestie, a dignissim dui fringilla. Sed sed tempor magna. Etiam pretium magna a ante sollicitudin tincidunt. Sed vulputate ex quis euismod ultrices. Nulla turpis augue, vehicula nec iaculis in, imperdiet convallis ligula.</p>
+        </div>
+        <div class="right">
+          <iframe src="https://giphy.com/embed/PK2RJGLlPUC3u" width="290" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          <p></p>
+        </div>
+      </div>
   </body>
 </html>
